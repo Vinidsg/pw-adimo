@@ -8,7 +8,57 @@
     <title>Sobre</title>
 </head>
 <body>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+    <style>
+        .carousel-item{
+            height: 32rem;
+            background: #777;
+            color: white;
+            position: relative;
+        }
+        .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+    </style>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <h1>Quem somos</h1>
+                        <p>Há mais de 19 anos transformando o mercado de casa ecológicas no país.
+                            Somos referência quando o assunto é compra e venda de casas ecológicas.</p>
+                            <a href="#" class="btn btn-lg btn-primary">
+                                Saiba mais
+                            </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container">
+                    <h1>Nossos Pilares</h1>
+                    <p>Com proximidade, transparência e uma ampla variedade de casas ecológicas, 
+                        conseguimos atuar de forma imparcial e oferecer soluções alinhadas aos interesses
+                        e perfis de pessoas ecológicas.</p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Saiba mais
+                        </a>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    
+    <!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -33,7 +83,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
     <!--<div class="main-login">
         <div class ="left-login">
             <img src="../Imagens/logoRecorted.png" alt="Adimo Logo">
