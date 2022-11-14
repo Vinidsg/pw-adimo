@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+font-family: 'Noto Sans', sans-serif; 
+background-color: #ade28a;
+
+}
+
+
+header{
+    height: 100px;
+    display:flex;
+    
+    justify-content: space-between;
+    background-color: #1e425e;
+    box-shadow: 0px 20px 40px #00000056; 
+}
+.logo{
+    
+    padding-top: 3px;
+    display:flex;
+}    
+
+ul{
+    height: 30px;
+    display:flex;
+    margin: 20px;
+}
+li{
+
+    color: #fffafa;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 20px;
+    display:flex;
+    transition: transform .2s;
+
+}
+
+li:hover{
+    transform: scale(1.5);
+}
+
+
+li a{
+    color: #fffafa;
+    list-style-type: none;
+    cursor: pointer;
+    display:flex;
+    text-decoration: none;
+}
+
+.left-menu{
+    width: 45vw;
+    padding-top: 50px;
+    display:flex;
+
+    
+}
+
+.right-menu > h1{
+   
+  width: 52vw;
+  float: right;
+  margin-top:-27vw;
+  font-size: 3vw;
+  display: flex;
+  color: #808000;
+}
+
+.right-menu > h2{
+   
+  width: 52vw;
+  float: right;
+  margin-top: -20vw;
+  font-size: 2vw;
+  color: #808000;
+}
+.apresenta-carrosel > h1{
+    padding: 60px;
+    text-align: center;
+    color: #1e425e;
+    border-radius: 30px;
+}
+
+
+
+
+  @media only screen and (max-width: 950px){
+    .li a{
+        width: 85%;
+    }
+
+}
