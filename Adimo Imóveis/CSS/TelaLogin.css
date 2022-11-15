@@ -198,11 +198,16 @@ color: #2b134b;
 }
 
 
+.preencher{
+    height: 25vh;
+    background-color: #00ff88;
+}
+
+
 /*Criação do footer*/
 
 footer{
     position: absolute;
-    bottom: -561px;
     width: 100%;
     height: 2.5rem;
     background: #1e425e;
