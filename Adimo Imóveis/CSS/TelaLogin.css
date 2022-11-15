@@ -16,7 +16,7 @@ body * {
 
 .main-login{            /* div principal(div que engloba a div esquerda e direita) */
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     background: #ade28a;
     display: flex;
     justify-content: center;
@@ -178,17 +178,42 @@ li a {
     height: -0vh;
 }
 
+
+.registrar{
+    color: #fffafa;
+    font-size:large;
+    
+}
+
+.registrar > a {
+    color: #fffafa;
+   text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.registrar > a:hover{
+color: #2b134b;
+}
+
+
+/*Criação do footer*/
+
 footer{
     position: absolute;
-    bottom: -478px;
+    bottom: -561px;
     width: 100%;
     height: 2.5rem;
     background: #1e425e;
     height: auto;
     width: 100vw;
-    padding: 40px;
+    padding: 10px;
     display: flex;
+    
 }
+
+
 
 .conteudo-footer{
 
@@ -204,14 +229,14 @@ footer{
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 3rem;
+    line-height: 2rem;
     color: #fffafa;
 }
 .conteudo-footer h2{
     color: #fffafa;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 3rem;
+    line-height: 0rem;
 }
 
 .conteudo-footer{
@@ -268,6 +293,11 @@ footer{
 }
 
 @media only screen and (max-width: 950px){
+    .li a{
+        width: 85%;
+    }
+
+@media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
     }
@@ -296,5 +326,5 @@ footer{
         width: 90%;
     }
     /*Estilos e modificações feitas na tela de Login */
-
+}
 }
