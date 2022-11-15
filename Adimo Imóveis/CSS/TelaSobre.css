@@ -1,209 +1,200 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-
-/*Estilos e modificações feitas na tela de Login */
-
-body{
-margin: 0;
-font-family: 'Noto Sans', sans-serif;
-}
-
-body * {
-box-sizing: border-box;
-}
-
-.main-login{            /* div principal(div que engloba a div esquerda e direita) */
-width: 100vw;
-height: 100vh;
-background: #ade28a;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.left-login{
-width: 50vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-
-.left-login > img{
-
-} 
-
-.left-login > h1 {
-color: #808000;
-}
-
-.right-login{
-width: 50vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.card-login{                    /*    Formulário de login.  */
-width: 60%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-padding: 30px 35px;
-background: #1e425e;
-border-radius: 20px;            /* Borda do formulário */
-box-shadow: 0px 10px 40px #00000056;
-}
-
-.card-login > h1 {
-
-color: #fffafa;
-font-weight: 800;
-margin: 0;
-
-}
-
-.textfield{                         /* Estruturas dos textfields*/
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-margin: 10px 0px;
-}
-
-.textfield > input{                 /* Edição dos textfields*/
-width: 100%;
-border: none;
-border-radius: 10px;
-padding: 15px;
-background: #aedfe4;
-color: #2b134b;
-font-size: 12pt;
-box-shadow: 0px 10px 40px #00000056;
-outline: none;
-box-sizing: border-box;
-}
-
-.textfield > label{
-color: #fffafa;
-margin-bottom: 10px;
-}
-
-.textfield > input::placeholder{
-color: #2b134b;
-}
-
-.btn-login{
-width: 100%;
-padding: 16px 0px;
-margin: 25px;
-border: none;
-border-radius: 8px;
-outline: none;
-text-transform: uppercase;
-font-weight: 800;
-letter-spacing: 3px;
-color: #2b134b;
-background-color: #00ff88;
-cursor: pointer;
-box-shadow: 0px 10px 40px -12px #00ff8052;
-}
-
-@media only screen and (max-width: 950px){
-.card-login{
-    width: 85%;
-}
-}
-
-@media only screen and (max-width: 950px){
-.main-login{
-    flex-direction: column;
-}
-.left-login > h1{
-    display: center;
-}   
-
-/*Alterações para a imagem responsiva*/
-
-
-
-
-/*Alterações para a imagem responsiva*/
-
-.right-login{
-    width: 100%;
-    height: auto;
-}
-
-.card-login{
-    width: 90%;
-}
-/*Estilos e modificações feitas na tela de Login */
-
-}
-
-/* Slider */
-
-.container-fluid {
+*{
+    margin: 0;
     padding: 0;
 }
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 32rem;
-    background: #777;
-    color: white;
-    position:relative;
+body{
+
+font-family: 'Noto Sans', sans-serif; 
+background-color: #ade28a;
 
 }
 
-.container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 50px;
+
+header{
+    height: 100px;
+    display:flex;
+    
+    justify-content: space-between;
+    background-color: #1e425e;
+    box-shadow: 0px 20px 40px #00000056; 
+}
+.logo{
+    
+    padding-top: 3px;
+    display:flex;
+}    
+
+ul{
+    height: 30px;
+    display:flex;
+    margin: 20px;
+}
+li{
+
+    color: #fffafa;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 20px;
+    display:flex;
+    transition: transform .2s;
+
 }
 
-#mainSlider .carousel-caption {
-    top: 30%;
+li:hover{
+    transform: scale(1.5);
 }
 
-#mainSlider .carousel-caption h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
 
-#mainSlider .carousel-caption p {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 100px;
-    color: #FFF;
-}
-
-.main-btn {
-    background-color: #65daf9;
-    color: #FFF;
-    text-transform: uppercase;
-    width: 200px;
-    height: 60px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 3px solid transparent;
-    transition: .5s;
-}
-
-.main-btn:hover{
+li a{
+    color: #fffafa;
+    list-style-type: none;
+    cursor: pointer;
+    display:flex;
     text-decoration: none;
-    color: #FFF;
-    background-color: transparent;
-    border-color: #65DAF9;
 }
 
-.carousel-indicators .active {
-    background-color: #65DAF9;
+.left-menu{
+    width: 45vw;
+    padding-top: 50px;
+    display:flex;
+
+    
+}
+
+.right-menu > h1{
+   
+  width: 52vw;
+  float: right;
+  margin-top:-27vw;
+  font-size: 3vw;
+  display: flex;
+  color: #1e425e;
+}
+
+.right-menu > h2{
+   
+  width: 52vw;
+  float: right;
+  margin-top: -20vw;
+  font-size: 2vw;
+  color: #808000;
+}
+.apresenta-carrosel > h1{
+    padding: 60px;
+    text-align: center;
+    color: #1e425e;
+    border-radius: 30px;
+}
+
+
+
+
+footer{
+    position: static;
+    bottom: -561px;
+    width: 100%;
+    height: 2.5rem;
+    background: #1e425e;
+    height: auto;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+}
+
+
+
+.conteudo-footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.conteudo-footer h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #fffafa;
+}
+.conteudo-footer h2{
+    color: #fffafa;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.conteudo-footer{
+    width: 100vw;
+    height: 20;
+    margin: 10 px auto;
+    line-height: 28px;
+    font-size: 14px;
+    align-items: center;
+}
+.midia-social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.midia-social li{
+    margin: 0 10px;
+
+}
+.midia-social{
+    text-decoration: none;
+    color: #fffafa;
+}
+.midia-social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.midia-social a:hover{
+    color: aqua;
+    
+}
+
+.fotter-bottom{
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.fotter-bottom p {
+    font-size: 3px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fffafa;
+}
+
+.fotter-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200px;
+
+}
+
+
+/*Carousel*/
+
+div#myCarousel {
+    background-color: #ade28a;
+}
+
+
+
+  @media only screen and (max-width: 950px){
+    .li a{
+        width: 85%;
+    }
+
 }
