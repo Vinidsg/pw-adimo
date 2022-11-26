@@ -25,7 +25,8 @@ header{
     
     padding-top: 3px;
     display:flex;
-}    
+}
+
 
 ul{
     height: 30px;
@@ -71,7 +72,8 @@ li a{
   margin-top:-27vw;
   font-size: 3vw;
   display: flex;
-  color: #808000;
+  color: #1e425e;
+  
 }
 
 .right-menu > h2{
@@ -81,19 +83,17 @@ li a{
   margin-top: -20vw;
   font-size: 2vw;
   color: #808000;
+  position: static;
 }
 .apresenta-carrosel > h1{
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     color: #1e425e;
-    border-radius: 30px;
+    border-radius: 0px;
 }
 
-
-
-
 footer{
-    position: absolute;
+    position: static;
     bottom: -561px;
     width: 100%;
     height: 2.5rem;
@@ -103,8 +103,6 @@ footer{
     padding: 10px;
     display: flex;
 }
-
-
 
 .conteudo-footer{
 
@@ -123,6 +121,7 @@ footer{
     line-height: 3rem;
     color: #fffafa;
 }
+
 .conteudo-footer h2{
     color: #fffafa;
     font-weight: 400;
@@ -138,6 +137,7 @@ footer{
     font-size: 14px;
     align-items: center;
 }
+
 .midia-social{
     list-style: none;
     display: flex;
@@ -145,14 +145,17 @@ footer{
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
+
 .midia-social li{
     margin: 0 10px;
 
 }
+
 .midia-social{
     text-decoration: none;
     color: #fffafa;
 }
+
 .midia-social a i{
     font-size: 1.1rem;
     transition: color .4s ease;
@@ -183,16 +186,17 @@ footer{
 
 }
 
+div#myCarousel {
+    background-color: #ade28a;
+}
 
+div#apresentacao {
+    background-color: #ade28a;
+    padding: 1px 0;
+}
 
-
-
-
-
-
-  @media only screen and (max-width: 950px){
+@media only screen and (max-width: 950px){
     .li a{
         width: 85%;
     }
-
 }
